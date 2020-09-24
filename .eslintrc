@@ -1,0 +1,52 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "jest",
+    "react-hooks",
+    "ramda",
+    "prettier",
+    "sonarjs"
+  ],
+  "rules": {
+		"max-len": "off",
+    "no-console": "warn",
+    "react/no-unescaped-entities": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+		"prefer-template": "off",
+		"arrow-parens": "off",
+		"no-shadow": "off",
+    "react/prop-types": "warn",
+    "no-nested-ternary": "off",
+    "no-bitwise": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb-base",
+    "plugin:ramda/recommended",
+    "plugin:prettier/recommended",
+    "plugin:sonarjs/recommended"
+  ],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": "babel-plugin-root-import",
+    "react": {
+      "version": "16.8.6"
+    }
+  }
+}
